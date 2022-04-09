@@ -1,0 +1,16 @@
+.header {
+    &__logo {
+        display: block;
+        width: 145px;
+        height: 45px;
+    }
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+    .header {
+        &__logo {
+           width: 225px;
+           height: 70px; 
+        }
+    }
+}
