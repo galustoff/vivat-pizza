@@ -1,0 +1,32 @@
+.status-bar {
+    overflow-x: hidden;
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+        color: $pale-gray;
+
+        &_done {
+            color: black;
+        }
+    }
+
+    &__text {
+        display: inline-block;
+        font-size: 30px;
+        line-height: 44px;
+        font-weight: 700;
+    }
+
+    &__delimiter {
+        width: 150px;
+        margin: 0 20px 8px;
+        border-bottom: 4px dotted;
+        display: inline-block;
+    }
+}

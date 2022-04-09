@@ -11,13 +11,13 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
     <title>Vivat Pizza</title>
   </head>
   <body class="page">
     <header class="header">
       <nav class="navbar navbar-expand-xl navbar-light">
-        <div class="container-xxl">
+        <div class="container-sm">
           <a class="navbar-brand" aria-current="page" href="#">
             <img
               class="header__logo"
@@ -33,13 +33,16 @@
             aria-controls="navbarTogglerDemo02"
             aria-expanded="false"
             aria-label="Toggle navigation"
-          >
-          </button>
+          ></button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 header__nav-list">
               <li class="nav-item point">
                 <div class="point__description">
-                  <img src="./vendor/images/geo.svg" alt="Иконка геолокации" class="point__geo" />
+                  <img
+                    src="./vendor/images/geo.svg"
+                    alt="Иконка геолокации"
+                    class="point__geo"
+                  />
                   <span class="point__city">Ховрино</span>
                   <span class="point__hours">Круглосуточно</span>
                 </div>
@@ -49,7 +52,11 @@
               </li>
               <li class="nav-item point">
                 <div class="point__description">
-                  <img src="./vendor/images/geo.svg" alt="Иконка геолокации" class="point__geo" />
+                  <img
+                    src="./vendor/images/geo.svg"
+                    alt="Иконка геолокации"
+                    class="point__geo"
+                  />
                   <span class="point__city">Измайлово</span>
                   <span class="point__hours">Круглосуточно</span>
                 </div>
@@ -59,7 +66,11 @@
               </li>
               <li class="nav-item point">
                 <div class="point__description">
-                  <img src="./vendor/images/geo.svg" alt="Иконка геолокации" class="point__geo" />
+                  <img
+                    src="./vendor/images/geo.svg"
+                    alt="Иконка геолокации"
+                    class="point__geo"
+                  />
                   <span class="point__city">Мытищи</span>
                   <span class="point__hours">Круглосуточно</span>
                 </div>
@@ -69,7 +80,11 @@
               </li>
               <li class="nav-item point">
                 <div class="point__description">
-                  <img src="./vendor/images/geo.svg" alt="Иконка геолокации" class="point__geo" />
+                  <img
+                    src="./vendor/images/geo.svg"
+                    alt="Иконка геолокации"
+                    class="point__geo"
+                  />
                   <span class="point__city">Хор.-Мневники</span>
                   <span class="point__hours">Круглосуточно</span>
                 </div>
@@ -82,6 +97,26 @@
         </div>
       </nav>
     </header>
+
+    <main class="main">
+      <div class="container-sm">
+        <div class="status-bar">
+          <ul class="status-bar__list">
+            <li class="status-bar__item status-bar__item_done">
+              <span class="status-bar__text">Корзина</span>
+            </li>
+            <li class="status-bar__item">
+              <div class="status-bar__delimiter"></div>
+              <span class="status-bar__text">Оформление заказа</span>
+            </li>
+            <li class="status-bar__item">
+              <div class="status-bar__delimiter"></div>
+              <span class="status-bar__text">Готово</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

@@ -73,4 +73,42 @@
   margin-right: 5px;
 }
 
-/*# sourceMappingURL=main.css.map */
+.main {
+  padding-top: 20px;
+  border: 1px solid pink;
+}
+
+@media screen and (min-width: 400px) {
+  .main {
+    padding-top: 72px;
+  }
+}
+.status-bar {
+  overflow-x: hidden;
+}
+.status-bar__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.status-bar__item {
+  display: inline-block;
+  color: #ccc;
+}
+.status-bar__item_done {
+  color: black;
+}
+.status-bar__text {
+  display: inline-block;
+  font-size: 30px;
+  line-height: 44px;
+  font-weight: 700;
+}
+.status-bar__delimiter {
+  width: 150px;
+  margin: 0 20px 8px;
+  border-bottom: 4px dotted;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=index.css.map */
