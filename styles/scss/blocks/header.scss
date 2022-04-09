@@ -1,8 +1,16 @@
 .header {
+    padding-top: 20px;
+
     &__logo {
         display: block;
         width: 145px;
         height: 45px;
+        margin-right: 32px;
+    }
+
+    &__nav-list {
+        justify-content: space-evenly;
+        width: 100%;
     }
 }
 
