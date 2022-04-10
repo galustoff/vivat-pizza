@@ -19,6 +19,7 @@
   font-style: normal;
   font-size: 12px;
   line-height: 16px;
+  letter-spacing: 0.01em;
   color: #666;
 }
 
@@ -103,9 +104,10 @@
   flex-direction: column;
 }
 .order__heading {
+  margin: 0;
   color: #333;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 22px;
+  line-height: 32px;
   font-weight: 700;
 }
 
@@ -116,10 +118,6 @@
     grid-template-rows: auto;
     grid-template-areas: "status-bar status-bar" "basket promo";
     gap: 40px;
-  }
-  .order__heading {
-    font-size: 23px;
-    line-height: 32px;
   }
 }
 .status-bar {
@@ -196,12 +194,15 @@
   }
 }
 .promo {
-  padding: 40px;
+  padding: 32px 16x 64px;
   display: flex;
   flex-direction: column;
-  row-gap: 40px;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.16), 0px 4px 6px rgba(0, 0, 0, 0.16);
-  border-radius: 8px;
+  row-gap: 32px;
+}
+.promo__heading {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: right;
 }
 .promo__paragraph {
   margin-top: 13px;
@@ -212,13 +213,16 @@
   row-gap: 16px;
 }
 .promo__input {
+  color: #666;
   height: 40px;
-  border: 2px solid black;
+  padding-left: 18px;
+  letter-spacing: 0.08em;
+  border: 2px solid rgba(0, 0, 0, 0.5);
   border-radius: 30px;
 }
 .promo__apply-btn {
   align-self: flex-end;
-  width: 160px;
+  width: 140px;
   height: 40px;
   color: #cc693e;
   background-color: white;
@@ -231,6 +235,11 @@
   line-height: 24px;
   font-weight: 700;
   margin-bottom: 0;
+  text-align: right;
+}
+.promo__old-price {
+  color: #ccc;
+  text-decoration: line-through;
 }
 .promo__dark-text {
   color: #333;
@@ -239,7 +248,8 @@
   font-family: sans-serif;
 }
 .promo__next-btn {
-  height: 64px;
+  margin-top: -8px;
+  height: 48px;
   color: white;
   background-color: #cc693e;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.16), 0px 4px 6px rgba(0, 0, 0, 0.16);
@@ -250,9 +260,24 @@
 @media screen and (min-width: 576px) {
   .promo {
     grid-area: promo;
+    padding: 40px;
+    row-gap: 40px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.16), 0px 4px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+  }
+  .promo__heading {
+    text-align: left;
+  }
+  .promo__apply-btn {
+    width: 160px;
   }
   .promo__sum {
     font-size: 18px;
+    text-align: left;
+  }
+  .promo__next-btn {
+    margin-top: 0;
+    height: 64px;
   }
 }
 

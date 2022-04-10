@@ -1,11 +1,14 @@
 .promo {
-  padding: 40px;
+  padding: 32px 16x 64px;
   display: flex;
   flex-direction: column;
-  row-gap: 40px;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.16),
-    0px 4px 6px rgba(0, 0, 0, 0.16);
-  border-radius: 8px;
+  row-gap: 32px;
+
+  &__heading {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: right;
+  }
 
   &__paragraph {
     margin-top: 13px;
@@ -18,14 +21,17 @@
   }
 
   &__input {
+    color: $gray-text;
     height: 40px;
-    border: 2px solid black;
+    padding-left: 18px;
+    letter-spacing: 0.08em;
+    border: 2px solid rgba(0, 0, 0, .5);
     border-radius: 30px;
   }
 
   &__apply-btn {
     align-self: flex-end;
-    width: 160px;
+    width: 140px;
     height: 40px;
     color: $braun;
     background-color: white;
@@ -40,6 +46,12 @@
     line-height: 24px;
     font-weight: 700;
     margin-bottom: 0;
+    text-align: right;
+  }
+
+  &__old-price {
+    color: $pale-gray;
+    text-decoration: line-through;
   }
 
   &__dark-text {
@@ -51,7 +63,8 @@
   }
 
   &__next-btn {
-    height: 64px;
+    margin-top: -8px;  
+    height: 48px;
     color: white;
     background-color: $braun;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.16),
@@ -64,9 +77,28 @@
 @media screen and (min-width: $desktop-breakpoint) {
   .promo {
     grid-area: promo;
+    padding: 40px;
+    row-gap: 40px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.16),
+      0px 4px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+
+    &__heading {
+      text-align: left;
+    }
+
+    &__apply-btn {
+      width: 160px;
+    }
 
     &__sum {
       font-size: 18px;
+      text-align: left;
+    }
+
+    &__next-btn {
+      margin-top: 0;
+      height: 64px;
     }
   }
 }
