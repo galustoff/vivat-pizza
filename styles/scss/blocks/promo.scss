@@ -1,30 +1,72 @@
 .promo {
-    padding: 40px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.16),
+    0px 4px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+
+  &__paragraph {
+    margin-top: 13px;
+  }
+
+  &__form {
     display: flex;
     flex-direction: column;
-    row-gap: 40px;
+    row-gap: 16px;
+  }
 
-    &__sum {
-        font-size: 16px;
-        line-height: 24px;
-        font-weight: 700;
-    }
+  &__input {
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 30px;
+  }
 
-    &__dark-text {
-        color: $dark-text;
-    }
+  &__apply-btn {
+    align-self: flex-end;
+    width: 160px;
+    height: 40px;
+    color: $braun;
+    background-color: white;
+    border: 2px solid $braun;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 0px 4px rgba(0, 0, 0, 0.16),
+      0px 2px 4px rgba(0, 0, 0, 0.16);
+    border-radius: 40px;
+  }
 
-    &__rub {
-        font-family: sans-serif;
-    }
+  &__sum {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+
+  &__dark-text {
+    color: $dark-text;
+  }
+
+  &__rub {
+    font-family: sans-serif;
+  }
+
+  &__next-btn {
+    height: 64px;
+    color: white;
+    background-color: $braun;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.16),
+      0px 4px 6px rgba(0, 0, 0, 0.16);
+    border: none;
+    border-radius: 40px;
+  }
 }
 
 @media screen and (min-width: $desktop-breakpoint) {
-    .promo {
-        grid-area: promo;
+  .promo {
+    grid-area: promo;
 
-        &__sum {
-            font-size: 18px;
-        }
+    &__sum {
+      font-size: 18px;
     }
+  }
 }

@@ -200,17 +200,51 @@
   display: flex;
   flex-direction: column;
   row-gap: 40px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.16), 0px 4px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+}
+.promo__paragraph {
+  margin-top: 13px;
+}
+.promo__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.promo__input {
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+.promo__apply-btn {
+  align-self: flex-end;
+  width: 160px;
+  height: 40px;
+  color: #cc693e;
+  background-color: white;
+  border: 2px solid #cc693e;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 0px 4px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.16);
+  border-radius: 40px;
 }
 .promo__sum {
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
+  margin-bottom: 0;
 }
 .promo__dark-text {
   color: #333;
 }
 .promo__rub {
   font-family: sans-serif;
+}
+.promo__next-btn {
+  height: 64px;
+  color: white;
+  background-color: #cc693e;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.16), 0px 4px 6px rgba(0, 0, 0, 0.16);
+  border: none;
+  border-radius: 40px;
 }
 
 @media screen and (min-width: 576px) {
