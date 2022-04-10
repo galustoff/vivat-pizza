@@ -22,7 +22,7 @@
   color: #666;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 576px) {
   .page {
     font-size: 14px;
     line-height: 20px;
@@ -46,7 +46,7 @@
   width: 100%;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 576px) {
   .header {
     padding-top: 20px;
   }
@@ -78,7 +78,7 @@
   border: 1px solid pink;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 576px) {
   .main {
     padding-top: 72px;
   }
@@ -114,6 +114,11 @@
 }
 
 @media screen and (min-width: 400px) {
+  .status-bar__delimiter {
+    width: 75px;
+  }
+}
+@media screen and (min-width: 576px) {
   .status-bar__text {
     font-size: 30px;
     line-height: 44px;
@@ -121,7 +126,7 @@
   .status-bar__delimiter {
     width: 150px;
     margin: 0 20px 8px;
-    border-bottom: 4px dotted;
+    border-bottom-width: 4px;
   }
 }
 
