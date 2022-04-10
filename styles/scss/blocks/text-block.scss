@@ -1,0 +1,15 @@
+.text-block {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $gray-text;
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .text-block {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

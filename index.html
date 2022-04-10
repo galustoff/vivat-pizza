@@ -104,15 +104,15 @@
           <div class="status-bar">
             <ul class="status-bar__list">
               <li class="status-bar__item status-bar__item_done">
-                <h2 class="status-bar__text">Корзина</h2>
+                <h2 class="status-bar__heading">Корзина</h2>
               </li>
               <li class="status-bar__item">
                 <div class="status-bar__delimiter"></div>
-                <h2 class="status-bar__text">Оформление заказа</h2>
+                <h2 class="status-bar__heading">Оформление заказа</h2>
               </li>
               <li class="status-bar__item">
                 <div class="status-bar__delimiter"></div>
-                <h2 class="status-bar__text">Готово</h2>
+                <h2 class="status-bar__heading">Готово</h2>
               </li>
             </ul>
           </div>
@@ -121,7 +121,28 @@
             <li class="basket__card"></li>
           </ul>
 
-          <div class="promo"></div>
+          <div class="promo">
+            <h3 class="order__heading">+358 баллов</h3>
+            <p class="text-block promo__dark-text">
+              Баллы начисляются в течении двух дней и доступны для использования
+              при заказе от 500 руб. Только для зарегистрированных
+              пользователей.
+            </p>
+            <p class="text-block promo__dark-text">
+              Зарегистрируйтесь или войдите.
+            </p>
+            <form class="promo__form" action="">
+              <h3 class="order__heading">Промокод</h3>
+              <input class="promo__input" type="text" name="promocode" />
+              <button class="promo__apply-btn" type="submit">Применить</button>
+            </form>
+            <p class="promo__sum promo__dark-text">
+              Сумма заказа: <span class="promo__old-price">4200</span>
+              <span class="promo__new-price">3580</span> 
+              <span class="promo__rub">&#8381;</span>
+            </p>
+            <button class="promo__next-btn">Далее</button>
+          </div>
         </div>
       </div>
     </main>

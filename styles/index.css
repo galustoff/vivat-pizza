@@ -28,6 +28,21 @@
     line-height: 20px;
   }
 }
+.text-block {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #666;
+}
+
+@media screen and (min-width: 576px) {
+  .text-block {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
 .header__logo {
   display: block;
   width: 145px;
@@ -87,6 +102,12 @@
   display: flex;
   flex-direction: column;
 }
+.order__heading {
+  color: #333;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
 
 @media screen and (min-width: 576px) {
   .order {
@@ -95,6 +116,10 @@
     grid-template-rows: auto;
     grid-template-areas: "status-bar status-bar" "basket promo";
     gap: 40px;
+  }
+  .order__heading {
+    font-size: 23px;
+    line-height: 32px;
   }
 }
 .status-bar {
@@ -114,7 +139,7 @@
 .status-bar__item_done {
   color: black;
 }
-.status-bar__text {
+.status-bar__heading {
   display: inline-block;
   font-size: 20px;
   line-height: 28px;
@@ -136,7 +161,7 @@
   .status-bar {
     grid-area: status-bar;
   }
-  .status-bar__text {
+  .status-bar__heading {
     font-size: 30px;
     line-height: 44px;
   }
@@ -168,6 +193,32 @@
 @media screen and (min-width: 576px) {
   .basket {
     grid-area: basket;
+  }
+}
+.promo {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.promo__sum {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.promo__dark-text {
+  color: #333;
+}
+.promo__rub {
+  font-family: sans-serif;
+}
+
+@media screen and (min-width: 576px) {
+  .promo {
+    grid-area: promo;
+  }
+  .promo__sum {
+    font-size: 18px;
   }
 }
 
