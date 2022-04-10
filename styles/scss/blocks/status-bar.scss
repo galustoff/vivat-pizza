@@ -41,6 +41,8 @@
 
 @media screen and (min-width: $desktop-breakpoint) {
   .status-bar {
+    grid-area: status-bar;
+    
     &__text {
       font-size: 30px;
       line-height: 44px;

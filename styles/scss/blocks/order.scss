@@ -1,0 +1,16 @@
+.order {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .order {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "status-bar status-bar"
+      "basket promo";
+    gap: 40px;
+  }
+}
