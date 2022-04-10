@@ -1,32 +1,49 @@
 .status-bar {
-    overflow-x: hidden;
+  overflow-x: hidden;
+  display: flex;
 
-    &__list {
-        margin: 0;
-        padding: 0;
-        list-style: none;
+  &__list {
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+    color: $pale-gray;
+
+    &_done {
+      color: black;
     }
+  }
 
-    &__item {
-        display: inline-block;
-        color: $pale-gray;
+  &__text {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+  }
 
-        &_done {
-            color: black;
-        }
-    }
+  &__delimiter {
+    width: 20px;
+    margin: 8px;
+    border-bottom: 2px dotted;
+    display: inline-block;
+  }
+}
 
+@media screen and (min-width: $desktop-breakpoint) {
+  .status-bar {
     &__text {
-        display: inline-block;
-        font-size: 30px;
-        line-height: 44px;
-        font-weight: 700;
+      font-size: 30px;
+      line-height: 44px;
     }
 
     &__delimiter {
-        width: 150px;
-        margin: 0 20px 8px;
-        border-bottom: 4px dotted;
-        display: inline-block;
+      width: 150px;
+      margin: 0 20px 8px;
+      border-bottom: 4px dotted;
     }
+  }
 }
