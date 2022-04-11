@@ -18,7 +18,8 @@
     grid-template-rows: auto;
     grid-template-areas:
       "status-bar status-bar"
-      "basket promo";
+      "basket promo"
+      "gifts promo";
     gap: 40px;
   }
 }
