@@ -1,7 +1,8 @@
 .promo {
-  padding: 32px 16x 64px;
+  padding: 32px 16px 64px;
   display: flex;
   flex-direction: column;
+  height: fit-content;
   row-gap: 32px;
 
   &__heading {

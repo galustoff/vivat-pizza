@@ -1,3 +1,4 @@
+const windowWidth = document.documentElement.clientWidth;
 const promoNextBtn = document.querySelector(".promo__next-btn");
 
 controlPromoBtnText();
@@ -5,5 +6,5 @@ controlPromoBtnText();
 window.addEventListener('resize', controlPromoBtnText);
 
 function controlPromoBtnText () {
-  promoNextBtn.textContent = (document.documentElement.clientWidth < 576) ? "Оформить заказ" : "Далее";
+  promoNextBtn.textContent = (windowWidth < 576) ? "Оформить заказ" : "Далее";
 }

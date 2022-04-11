@@ -23,7 +23,7 @@
   color: #666;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 992px) {
   .page {
     font-size: 14px;
     line-height: 20px;
@@ -38,7 +38,7 @@
   color: #666;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 992px) {
   .text-block {
     font-size: 14px;
     line-height: 20px;
@@ -62,7 +62,7 @@
   width: 100%;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 992px) {
   .header {
     padding-top: 20px;
   }
@@ -94,7 +94,7 @@
   border: 1px solid pink;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 992px) {
   .main {
     padding-top: 72px;
   }
@@ -104,14 +104,14 @@
   flex-direction: column;
 }
 .order__heading {
-  margin: 0;
+  margin: 0 0 10px;
   color: #333;
   font-size: 22px;
   line-height: 32px;
   font-weight: 700;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 992px) {
   .order {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -155,7 +155,7 @@
     width: 75px;
   }
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 992px) {
   .status-bar {
     grid-area: status-bar;
   }
@@ -175,28 +175,124 @@
   padding: 0;
 }
 .basket__card {
-  padding-top: 40px;
+  min-height: 215px;
+  margin-bottom: 40px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 40px;
+  position: relative;
+}
+.basket__sticker {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 7px 16px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  border-radius: 16px;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.24), 0px 6px 16px rgba(0, 0, 0, 0.32);
+}
+.basket__sticker_new {
+  color: white;
+  text-transform: uppercase;
+  background-color: #e30029;
+}
+.basket__sticker_gift {
+  color: #333;
+  background-color: #ffe600;
 }
 .basket__title {
-  font-size: 22px;
-  line-height: 32px;
-  font-weight: 700;
-  color: black;
+  display: flex;
+  justify-content: space-between;
 }
-.basket__subtitle {
-  font-size: 14px;
-  line-height: 20px;
+.basket__description {
+  flex-grow: 1;
+  padding: 20px 16px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.basket__cls-btn {
+  width: 24px;
+  height: 24px;
+  background-image: url(../../../vendor/images/cls-btn.svg);
+  cursor: pointer;
+}
+.basket__image {
+  width: 185px;
+  height: 215px;
+  object-fit: cover;
+}
+.basket__panel {
+  align-self: flex-end;
+  margin: 24px 0 5px;
+  display: flex;
+  column-gap: 16px;
+}
+.basket__buttons {
+  display: flex;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+.basket__btn {
+  border-top: 2px solid #cc693e;
+  border-bottom: 2px solid #cc693e;
+  background-color: white;
+  color: #666;
+  width: 40px;
+}
+.basket__btn_minus {
+  border-right: none;
+  border-left: 2px solid #cc693e;
+  border-radius: 30px 0 0 30px;
+  padding-left: 8px;
+  padding-right: 0;
+}
+.basket__btn_plus {
+  border-left: none;
+  border-right: 2px solid #cc693e;
+  border-radius: 0 30px 30px 0;
+  padding-left: 0;
+}
+.basket__values-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.basket__value {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: right;
+}
+.basket__value_old {
+  color: #ccc;
+}
+.basket__value_new {
+  color: #333;
+}
+.basket__display {
+  width: 52px;
+  height: 48px;
+  background-color: white;
+  border: 2px solid #cc693e;
+  padding-top: 10px;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 992px) {
   .basket {
     grid-area: basket;
   }
 }
 .promo {
-  padding: 32px 16x 64px;
+  padding: 32px 16px 64px;
   display: flex;
   flex-direction: column;
+  height: fit-content;
   row-gap: 32px;
 }
 .promo__heading {
@@ -257,7 +353,7 @@
   border-radius: 40px;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 992px) {
   .promo {
     grid-area: promo;
     padding: 40px;
