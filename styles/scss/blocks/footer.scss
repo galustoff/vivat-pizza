@@ -1,0 +1,46 @@
+.footer {
+  padding: 16px;
+  background-color: $footer-bg;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  justify-content: space-between;
+
+  &__links-block {
+    display: flex;
+    column-gap: 16px;
+    flex-wrap: wrap;
+  }
+  
+  &__links-group {
+    margin: 0 0 32px;
+    width: 136px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  &__link {
+    color: $f1-gray;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .footer {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 32px 64px;
+
+    &__links-block {
+      column-gap: 40px;
+    }
+
+    &__links-group {
+      margin-bottom: 0;
+      width: 185px;
+    }
+  }
+}
