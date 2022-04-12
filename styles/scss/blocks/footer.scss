@@ -1,17 +1,21 @@
 .footer {
-  padding: 16px;
   background-color: $footer-bg;
-  font-size: 12px;
-  line-height: 16px;
-  display: flex;
-  justify-content: space-between;
+
+  &__container {
+    padding: 16px;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
   &__links-block {
     display: flex;
     column-gap: 16px;
     flex-wrap: wrap;
   }
-  
+
   &__links-group {
     margin: 0 0 32px;
     width: 136px;
@@ -25,14 +29,37 @@
   &__link {
     color: $f1-gray;
     text-decoration: none;
+
+    &:hover {
+      color: $braun;
+    }
+
+    &_contract {
+      color: $braun;
+
+      &:hover {
+        color: $f1-gray;
+      }
+    }
+  }
+
+  &__text {
+    color: $f1-gray;
+    margin: 0;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: left;
   }
 }
 
 @media screen and (min-width: $desktop-breakpoint) {
   .footer {
-    font-size: 14px;
-    line-height: 20px;
-    padding: 32px 64px;
+    &__container {
+      font-size: 14px;
+      line-height: 20px;
+      padding: 32px 0;
+      flex-direction: row;
+    }
 
     &__links-block {
       column-gap: 40px;
@@ -41,6 +68,13 @@
     &__links-group {
       margin-bottom: 0;
       width: 185px;
+      row-gap: 8px;
+    }
+
+    &__text {
+      font-size: 12px;
+      line-height: 16px;
+      text-align: right;
     }
   }
 }

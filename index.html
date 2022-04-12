@@ -17,7 +17,7 @@
   <body class="page">
     <header class="header">
       <nav class="navbar navbar-expand-xl navbar-light">
-        <div class="container-lg">
+        <div class="container-lg section-container">
           <a class="navbar-brand" aria-current="page" href="#">
             <img
               class="header__logo"
@@ -99,8 +99,8 @@
     </header>
 
     <main class="main">
-      <div class="container-lg">
-        <div class="order">
+      <div class="container-lg section-container">
+        <section class="order">
           <div class="status-bar">
             <ul class="status-bar__list">
               <li class="status-bar__item status-bar__item_done">
@@ -379,35 +379,80 @@
             </p>
             <button class="promo__next-btn">Оформить заказ</button>
           </div>
-        </div>
+        </section>
+
+        <section class="total">
+          <hr class="total__hr" />
+        </section>
       </div>
     </main>
 
     <footer class="footer">
-      <div class="footer__links-block">
-        <ul class="footer__links-group">
-          <li class="footer__item"><a href="#" class="footer__link">Меню</a></li>
-          <li class="footer__item"><a href="#" class="footer__link">Барное меню</a></li>
-          <li class="footer__item"><a href="#" class="footer__link">Ресторан</a></li>
-          <li class="footer__item"><a href="#" class="footer__link">Акции</a></li>
-          <li class="footer__item"><a href="#" class="footer__link">Блюда за баллы</a></li>
-        </ul>
-        <ul class="footer__links-group">
-          <li class="footer__item"><a href="#" class="footer__link">Доставка</a></li>
-          <li class="footer__item"><a href="#" class="footer__link">Отзывы</a></li>
-          <li class="footer__item"><a href="#" class="footer__link">Маленький кондитер</a></li>
-          <li class="footer__item"><a href="#" class="footer__link">Подарочные карты</a></li>
-        </ul>
-        <ul class="footer__links-group">
-          <li class="footer__item"><a href="#" class="footer__link">О нас</a></li>
-          <li class="footer__item"><a href="#" class="footer__link">Вакансии</a></li>
-          <li class="footer__item"><a href="#" class="footer__link">События</a></li>
-          <li class="footer__item"><a href="#" class="footer__link">Статьи</a></li>
-          <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
-        </ul>
-      </div>
+      <div class="container-lg section-container footer__container">
+        <div class="footer__links-block">
+          <ul class="footer__links-group">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Меню</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Барное меню</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Ресторан</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Акции</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Блюда за баллы</a>
+            </li>
+          </ul>
+          <ul class="footer__links-group">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Доставка</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Отзывы</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Маленький кондитер</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Подарочные карты</a>
+            </li>
+          </ul>
+          <ul class="footer__links-group">
+            <li class="footer__item">
+              <a href="#" class="footer__link">О нас</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Вакансии</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">События</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Статьи</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Контакты</a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="footer__info-block"></div>
+        <div class="footer__info-block">
+          <div class="footer__icons"></div>
+          <div class="footer__description">
+            <p class="footer__text">
+              2004 - 2020 &copy; Vivat Pizza.
+              <a href="#" class="footer__link footer__link_contract">Договор публичной оферты</a>
+            </p>
+            <p class="footer__text">
+              Использование материалов с сайта без нашего ведома незаконно
+            </p>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script

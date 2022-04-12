@@ -29,6 +29,10 @@
     line-height: 20px;
   }
 }
+.section-container {
+  padding: 0;
+}
+
 .text-block {
   margin: 0;
   padding: 0;
@@ -180,6 +184,7 @@
   }
 }
 .card {
+  border: none;
   min-height: 215px;
   margin-bottom: 40px;
   background-color: #f1f1f1;
@@ -403,12 +408,21 @@
     height: 64px;
   }
 }
+.total__hr {
+  height: 2px !important;
+  color: #b3b3b3;
+  opacity: 1;
+}
+
 .footer {
-  padding: 16px;
   background-color: #1a1a1a;
+}
+.footer__container {
+  padding: 16px;
   font-size: 12px;
   line-height: 16px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 .footer__links-block {
@@ -429,12 +443,29 @@
   color: #f1f1f1;
   text-decoration: none;
 }
+.footer__link:hover {
+  color: #cc693e;
+}
+.footer__link_contract {
+  color: #cc693e;
+}
+.footer__link_contract:hover {
+  color: #f1f1f1;
+}
+.footer__text {
+  color: #f1f1f1;
+  margin: 0;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: left;
+}
 
 @media screen and (min-width: 992px) {
-  .footer {
+  .footer__container {
     font-size: 14px;
     line-height: 20px;
-    padding: 32px 64px;
+    padding: 32px 0;
+    flex-direction: row;
   }
   .footer__links-block {
     column-gap: 40px;
@@ -442,6 +473,12 @@
   .footer__links-group {
     margin-bottom: 0;
     width: 185px;
+    row-gap: 8px;
+  }
+  .footer__text {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
   }
 }
 
