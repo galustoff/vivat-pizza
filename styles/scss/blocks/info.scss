@@ -1,0 +1,53 @@
+.info {
+  display: flex;
+  column-gap: 8px;
+  justify-content: space-between;
+  margin-bottom: 36px;
+
+  &__btn {
+    height: 40px;
+    border: none;
+
+    &_left {
+      border-radius: 0 25px 25px 0;
+    }
+
+    &_center {
+      border-radius: 25px;
+    }
+
+    &_right {
+      border-radius: 25px 0 0 25px;
+    }
+
+    &_phone {
+      background-color: $dark-text;
+      flex-grow: 0.8;
+    }
+
+    &_geo {
+      background-color: $dark-text;
+      flex-grow: 1;
+    }
+
+    &_dude {
+      background-color: $dark-text;
+      flex-grow: 1;
+    }
+
+    &_sum {
+      background-color: $braun;
+      color: white;
+      flex-grow: 1.5;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 700;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .info {
+    display: none;
+  }
+}

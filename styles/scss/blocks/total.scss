@@ -5,6 +5,7 @@
 @media screen and (min-width: $desktop-breakpoint) {
   .total {
     margin: -$slider-hide-scroll 0 70px;
+    padding-top: 25px;
     background-color: white;
     display: flex;
     flex-direction: column;
