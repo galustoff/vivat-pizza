@@ -48,6 +48,10 @@
     line-height: 20px;
   }
 }
+.image-wrapper {
+  position: relative;
+}
+
 .sticker {
   position: absolute;
   top: 16px;
@@ -215,7 +219,6 @@
   flex-direction: row;
   justify-content: flex-start;
   column-gap: 40px;
-  position: relative;
 }
 .card__image {
   width: 185px;
