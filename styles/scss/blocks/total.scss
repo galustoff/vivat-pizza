@@ -4,11 +4,12 @@
 
 @media screen and (min-width: $desktop-breakpoint) {
   .total {
+    margin: -$slider-hide-scroll 0 70px;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     row-gap: 32px;
-    margin-bottom: 70px;
   
     &__hr {
       width: 100%;

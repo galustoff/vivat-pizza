@@ -1,8 +1,9 @@
 .slider {
   margin: 0;
-  padding: 0;
+  padding: 0 0 $slider-hide-scroll;
   list-style: none;
   display: flex;
   column-gap: 16px;
   overflow-x: scroll;
+  scroll-behavior: smooth;
 }

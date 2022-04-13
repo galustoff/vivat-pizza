@@ -210,12 +210,14 @@
 @media screen and (min-width: 992px) {
   .basket {
     grid-area: basket;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
   }
 }
 .order-card {
   border: none;
   min-height: 215px;
-  margin-bottom: 40px;
   background-color: #f1f1f1;
   border-radius: 8px;
   overflow: hidden;
@@ -435,15 +437,18 @@
 }
 .slider {
   margin: 0;
-  padding: 0;
+  padding: 0 0 50px;
   list-style: none;
   display: flex;
   column-gap: 16px;
   overflow-x: scroll;
+  scroll-behavior: smooth;
 }
 
 .slider-card {
+  flex-shrink: 0;
   width: 298px;
+  height: fit-content;
   background-color: #f1f1f1;
   border-radius: 8px;
   overflow: hidden;
@@ -462,6 +467,23 @@
   font-weight: 700;
   color: black;
 }
+.slider-card__btn {
+  padding: 8px 32px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  display: block;
+  margin: 16px 0 0 auto;
+  filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.25)) drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.16)) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.16));
+  border: 2px solid #cc693e;
+  border-radius: 32px;
+  color: white;
+  background-color: #cc693e;
+}
+.slider-card__btn_from {
+  color: #cc693e;
+  background-color: white;
+}
 
 .total {
   display: none;
@@ -469,11 +491,12 @@
 
 @media screen and (min-width: 992px) {
   .total {
+    margin: -50px 0 70px;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     row-gap: 32px;
-    margin-bottom: 70px;
   }
   .total__hr {
     width: 100%;
