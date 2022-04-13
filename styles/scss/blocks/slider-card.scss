@@ -1,0 +1,23 @@
+.slider-card {
+  width: 298px;
+  background-color: $f1-gray;
+  border-radius: 8px;
+  overflow: hidden;
+
+  &__image {
+    width: 298px;
+    height: 198px;
+    object-fit: cover;
+  }
+
+  &__description {
+    padding: 16px;
+  }
+
+  &__heading {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: black;
+  }
+}
