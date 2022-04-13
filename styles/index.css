@@ -48,6 +48,27 @@
     line-height: 20px;
   }
 }
+.sticker {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 7px 16px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  border-radius: 16px;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.24), 0px 6px 16px rgba(0, 0, 0, 0.32);
+}
+.sticker_new {
+  color: white;
+  text-transform: uppercase;
+  background-color: #e30029;
+}
+.sticker_gift {
+  color: #333;
+  background-color: #ffe600;
+}
+
 .header__logo {
   display: block;
   width: 145px;
@@ -195,26 +216,6 @@
   justify-content: flex-start;
   column-gap: 40px;
   position: relative;
-}
-.card__sticker {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  padding: 7px 16px;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 500;
-  border-radius: 16px;
-  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.24), 0px 6px 16px rgba(0, 0, 0, 0.32);
-}
-.card__sticker_new {
-  color: white;
-  text-transform: uppercase;
-  background-color: #e30029;
-}
-.card__sticker_gift {
-  color: #333;
-  background-color: #ffe600;
 }
 .card__image {
   width: 185px;
@@ -409,6 +410,23 @@
   .promo__next-btn {
     margin-top: 0;
     height: 64px;
+  }
+}
+.recomendations {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .recomendations {
+    display: block;
+    margin-top: 64px;
+  }
+  .recomendations__heading {
+    color: #333;
+    font-size: 30px;
+    line-height: 44px;
+    font-weight: 700;
+    margin-bottom: 40px;
   }
 }
 .total {

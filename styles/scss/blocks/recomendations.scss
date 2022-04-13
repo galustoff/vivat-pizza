@@ -1,0 +1,18 @@
+.recomendations {
+  display: none;
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .recomendations {
+    display: block;
+    margin-top: 64px;
+  
+    &__heading {
+      color: $dark-text;
+      font-size: 30px;
+      line-height: 44px;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+  }
+}
