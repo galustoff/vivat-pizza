@@ -8,7 +8,8 @@
   flex-direction: row;
   justify-content: flex-start;
   column-gap: 40px;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 0px 4px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 0px 4px rgba(0, 0, 0, 0.16),
+    0px 2px 4px rgba(0, 0, 0, 0.16);
   position: relative;
 
   &__image {
@@ -52,11 +53,18 @@
   }
 
   &__cls-btn {
-    display: none;
-    width: 24px;
-    height: 24px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 22px;
+    right: 16px;
     background-image: url(../../../vendor/images/cls-btn.svg);
+    background-size: contain;
     cursor: pointer;
+
+    &_hiding {
+      display: none;
+    }
   }
 
   &__panel {
@@ -144,7 +152,6 @@
     background-color: $f1-gray;
     border-radius: 8px;
     box-shadow: none;
-    position: static;
 
     &__image {
       width: 185px;
@@ -175,7 +182,13 @@
     }
 
     &__cls-btn {
-      display: block;
+      width: 24px;
+      height: 24px;
+      top: 20px;
+
+      &_hiding {
+        display: block;
+      }
     }
 
     &__text-block {

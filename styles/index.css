@@ -307,11 +307,17 @@
   display: none;
 }
 .order-card__cls-btn {
-  display: none;
-  width: 24px;
-  height: 24px;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 22px;
+  right: 16px;
   background-image: url(../../../vendor/images/cls-btn.svg);
+  background-size: contain;
   cursor: pointer;
+}
+.order-card__cls-btn_hiding {
+  display: none;
 }
 .order-card__panel {
   display: flex;
@@ -386,7 +392,6 @@
     background-color: #f1f1f1;
     border-radius: 8px;
     box-shadow: none;
-    position: static;
   }
   .order-card__image {
     width: 185px;
@@ -413,6 +418,11 @@
     font-weight: 700;
   }
   .order-card__cls-btn {
+    width: 24px;
+    height: 24px;
+    top: 20px;
+  }
+  .order-card__cls-btn_hiding {
     display: block;
   }
   .order-card__text-block {
