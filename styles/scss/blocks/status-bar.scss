@@ -1,6 +1,7 @@
 .status-bar {
   overflow-x: hidden;
   display: flex;
+  padding-left: 16px;
 
   &__list {
     flex-shrink: 0;
@@ -42,6 +43,7 @@
 @media screen and (min-width: $desktop-breakpoint) {
   .status-bar {
     grid-area: status-bar;
+    padding-left: 0;
 
     &__heading {
       font-size: 30px;
