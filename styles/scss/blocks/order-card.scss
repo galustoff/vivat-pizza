@@ -32,6 +32,14 @@
     justify-content: space-between;
   }
 
+  &__heading {
+    margin: 0;
+    color: $dark-text;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+
   &__text-block {
     display: none;
   }
@@ -139,6 +147,13 @@
 
     &__sticker {
       display: block;
+    }
+
+    &__heading {
+      margin-bottom: 10px;
+      font-size: 22px;
+      line-height: 32px;
+      font-weight: 700;
     }
 
     &__cls-btn {
