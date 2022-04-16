@@ -303,10 +303,13 @@
   margin: 24px 0 5px;
   display: flex;
   column-gap: 16px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
 }
 .order-card__buttons {
   display: flex;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   font-weight: 500;
   color: #666;
@@ -317,7 +320,8 @@
   border-bottom: 2px solid #cc693e;
   background-color: white;
   color: #666;
-  width: 40px;
+  width: 26px;
+  height: 32px;
 }
 .order-card__btn_minus {
   border-right: none;
@@ -333,14 +337,16 @@
   padding-left: 0;
 }
 .order-card__values-column {
-  display: flex;
   flex-direction: column;
   justify-content: center;
 }
+.order-card__values-column_prices {
+  display: none;
+}
+.order-card__values-column_sums {
+  display: flex;
+}
 .order-card__value {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
   text-align: right;
 }
 .order-card__value_old {
@@ -350,8 +356,8 @@
   color: #333;
 }
 .order-card__display {
-  width: 3em;
-  height: 48px;
+  width: 36px;
+  height: 32px;
   background-color: white;
   border: 2px solid #cc693e;
   text-align: center;
@@ -360,10 +366,26 @@
   outline: none;
 }
 
-.card:last-of-type {
-  margin-bottom: 0;
+@media screen and (min-width: 992px) {
+  .order-card__panel {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .order-card__buttons {
+    font-size: 18px;
+  }
+  .order-card__btn {
+    width: 40px;
+    height: 48px;
+  }
+  .order-card__values-column_prices {
+    display: flex;
+  }
+  .order-card__display {
+    width: 52px;
+    height: 48px;
+  }
 }
-
 .gifts {
   margin-top: 16px;
 }

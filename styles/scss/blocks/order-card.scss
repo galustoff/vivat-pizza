@@ -39,11 +39,14 @@
     margin: 24px 0 5px;
     display: flex;
     column-gap: 16px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
   }
 
   &__buttons {
     display: flex;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     font-weight: 500;
     color: $gray-text;
@@ -55,7 +58,8 @@
     border-bottom: 2px solid $braun;
     background-color: white;
     color: $gray-text;
-    width: 40px;
+    width: 26px;
+    height: 32px;
   }
 
   &__btn_minus {
@@ -74,15 +78,20 @@
   }
 
   &__values-column {
-    display: flex;
+
+    &_prices {
+      display: none;
+    }
+
+    &_sums {
+      display: flex;
+    }
+    
     flex-direction: column;
     justify-content: center;
   }
 
   &__value {
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 700;
     text-align: right;
   }
 
@@ -95,8 +104,8 @@
   }
 
   &__display {
-    width: 3em;
-    height: 48px;
+    width: 36px;
+    height: 32px;
     background-color: white;
     border: 2px solid $braun;
     text-align: center;
@@ -106,6 +115,31 @@
   }
 }
 
-.card:last-of-type {
-  margin-bottom: 0;
+@media screen and (min-width: $desktop-breakpoint) {
+  .order-card {
+    &__panel {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    &__buttons {
+      font-size: 18px;
+    }
+
+    &__btn {
+      width: 40px;
+      height: 48px;
+    }
+
+    &__values-column {
+      &_prices {
+        display: flex;
+      }
+    }
+
+    &__display {
+      width: 52px;
+      height: 48px;
+    }
+  }
 }
