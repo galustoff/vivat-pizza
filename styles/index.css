@@ -308,6 +308,8 @@
   display: flex;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 500;
+  color: #666;
   text-align: center;
 }
 .order-card__btn {
@@ -348,11 +350,14 @@
   color: #333;
 }
 .order-card__display {
-  width: 52px;
+  width: 3em;
   height: 48px;
   background-color: white;
   border: 2px solid #cc693e;
-  padding-top: 10px;
+  text-align: center;
+  color: #666;
+  font-weight: 500;
+  outline: none;
 }
 
 .card:last-of-type {

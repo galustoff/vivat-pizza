@@ -136,8 +136,10 @@
 
     <main class="main">
       <div class="container-lg section-container">
-        <section class="order">
+        <form class="order" name="order">
           <ul class="basket">
+
+<!--
             <li class="order-card">
               <div class="image-wrapper">
                 <img
@@ -241,7 +243,8 @@
                 </div>
               </div>
             </li>
-
+          -->
+            
             <li class="order-card">
               <div class="image-wrapper">
                 <div class="sticker sticker_new">new</div>
@@ -253,7 +256,6 @@
                   height="215"
                 />
               </div>
-
               <div class="order-card__description">
                 <div class="order-card__title">
                   <h3 class="order__heading">Бургер &laquo;Два сыра&raquo;</h3>
@@ -281,7 +283,7 @@
                     <button class="order-card__btn order-card__btn_minus">
                       -
                     </button>
-                    <div class="order-card__display">3</div>
+                    <input class="order-card__display" type="text" name="doubleCheese" maxlength="3" value="3">
                     <button class="order-card__btn order-card__btn_plus">
                       +
                     </button>
@@ -301,6 +303,7 @@
               </div>
             </li>
 
+<!--
             <li class="order-card">
               <div class="image-wrapper">
                 <div class="sticker sticker_new">new</div>
@@ -403,6 +406,8 @@
                 </div>
               </div>
             </li>
+-->
+          
           </ul>
 
           <div class="gifts">
@@ -459,9 +464,9 @@
             </p>
             <button class="promo__next-btn"></button>
           </div>
-        </section>
+        </form>
 
-        <!--
+<!--
         <section class="recomendations">
           <h2 class="recomendations__heading">Рекомендуем</h2>
 

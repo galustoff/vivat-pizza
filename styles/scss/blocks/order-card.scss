@@ -45,6 +45,8 @@
     display: flex;
     font-size: 18px;
     line-height: 24px;
+    font-weight: 500;
+    color: $gray-text;
     text-align: center;
   }
 
@@ -93,11 +95,14 @@
   }
 
   &__display {
-    width: 52px;
+    width: 3em;
     height: 48px;
     background-color: white;
     border: 2px solid $braun;
-    padding-top: 10px;
+    text-align: center;
+    color: $gray-text;
+    font-weight: 500;
+    outline: none;
   }
 }
 
