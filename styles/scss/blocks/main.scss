@@ -1,0 +1,9 @@
+.main {
+  margin-top: 32px;
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .main {
+    margin-top: 40px;
+  }
+}
