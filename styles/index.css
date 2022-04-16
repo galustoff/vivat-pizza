@@ -77,6 +77,9 @@
   background-color: #ffe600;
 }
 
+.header__title {
+  display: none;
+}
 .header__logo {
   display: block;
   width: 145px;
@@ -563,8 +566,6 @@
 }
 .footer__container {
   padding: 16px 16px 24px;
-  font-size: 12px;
-  line-height: 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -596,6 +597,13 @@
 .footer__link_contract:hover {
   color: #f1f1f1;
 }
+.footer__heading {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
 .footer__description {
   margin-top: 32px;
 }
@@ -624,8 +632,6 @@
 
 @media screen and (min-width: 992px) {
   .footer__container {
-    font-size: 14px;
-    line-height: 20px;
     padding: 32px 0;
     flex-direction: row;
   }
@@ -636,6 +642,12 @@
     margin-bottom: 0;
     width: 185px;
     row-gap: 8px;
+  }
+  .footer__heading {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 20px;
   }
   .footer__icons {
     column-gap: 16px;

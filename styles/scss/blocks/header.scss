@@ -1,4 +1,8 @@
 .header {
+  &__title {
+    display: none;
+  }
+  
   &__logo {
     display: block;
     width: 145px;
