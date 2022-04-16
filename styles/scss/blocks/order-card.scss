@@ -29,6 +29,8 @@
     left: 0;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
 
   &__title {
@@ -159,6 +161,8 @@
       flex-grow: 1;
       padding: 20px 16px 0 0;
       flex-direction: column;
+      justify-content: unset;
+      align-items: unset;
     }
 
     &__heading {
