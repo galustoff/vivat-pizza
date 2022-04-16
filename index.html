@@ -97,10 +97,8 @@
           </div>
         </div>
       </nav>
-    </header>
 
-    <main class="main">
-      <section class="info">
+      <div class="info">
         <button class="info__btn info__btn_phone info__btn_left">
           <img src="./vendor/images/phone.svg" alt="телефонная трубка" />
         </button>
@@ -115,25 +113,31 @@
           <span class="info__sum">4888</span>
           <span class="rub info__rub"> &#8381;</span>
         </button>
-      </section>
+      </div>
 
+      <div class="container-lg">
+        <div class="status-bar">
+          <ul class="status-bar__list">
+            <li class="status-bar__item status-bar__item_done">
+              <h2 class="status-bar__heading">Корзина</h2>
+            </li>
+            <li class="status-bar__item">
+              <div class="status-bar__delimiter"></div>
+              <h2 class="status-bar__heading">Оформление заказа</h2>
+            </li>
+            <li class="status-bar__item">
+              <div class="status-bar__delimiter"></div>
+              <h2 class="status-bar__heading">Готово</h2>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
       <div class="container-lg section-container">
         <section class="order">
-          <div class="status-bar">
-            <ul class="status-bar__list">
-              <li class="status-bar__item status-bar__item_done">
-                <h2 class="status-bar__heading">Корзина</h2>
-              </li>
-              <li class="status-bar__item">
-                <div class="status-bar__delimiter"></div>
-                <h2 class="status-bar__heading">Оформление заказа</h2>
-              </li>
-              <li class="status-bar__item">
-                <div class="status-bar__delimiter"></div>
-                <h2 class="status-bar__heading">Готово</h2>
-              </li>
-            </ul>
-          </div>
+          
 
           <ul class="basket">
             <li class="order-card">
@@ -459,6 +463,7 @@
           </div>
         </section>
 
+        <!--
         <section class="recomendations">
           <h2 class="recomendations__heading">Рекомендуем</h2>
 
@@ -629,6 +634,7 @@
           <button class="promo__next-btn total__next-btn">Далее</button>
         </section>
       </div>
+-->
     </main>
 
     <footer class="footer">

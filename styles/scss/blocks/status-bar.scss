@@ -1,7 +1,5 @@
 .status-bar {
-  overflow-x: hidden;
   display: flex;
-  padding-left: 16px;
 
   &__list {
     flex-shrink: 0;
@@ -35,20 +33,22 @@
 }
 
 @media screen and (min-width: 400px) {
-  .status-bar__delimiter {
-    width: 75px;
+  .status-bar {
+    &__heading {
+      font-size: 30px;
+      line-height: 44px;
+    }
+
+    &__delimiter {
+      width: 75px;
+    }
   }
 }
 
 @media screen and (min-width: $desktop-breakpoint) {
   .status-bar {
     grid-area: status-bar;
-    padding-left: 0;
-
-    &__heading {
-      font-size: 30px;
-      line-height: 44px;
-    }
+    padding-top: 72px;
 
     &__delimiter {
       width: 150px;

@@ -128,11 +128,6 @@
   margin-right: 5px;
 }
 
-@media screen and (min-width: 992px) {
-  .main {
-    padding-top: 72px;
-  }
-}
 .info {
   display: flex;
   column-gap: 8px;
@@ -200,9 +195,7 @@
   }
 }
 .status-bar {
-  overflow-x: hidden;
   display: flex;
-  padding-left: 16px;
 }
 .status-bar__list {
   flex-shrink: 0;
@@ -231,6 +224,10 @@
 }
 
 @media screen and (min-width: 400px) {
+  .status-bar__heading {
+    font-size: 30px;
+    line-height: 44px;
+  }
   .status-bar__delimiter {
     width: 75px;
   }
@@ -238,11 +235,7 @@
 @media screen and (min-width: 992px) {
   .status-bar {
     grid-area: status-bar;
-    padding-left: 0;
-  }
-  .status-bar__heading {
-    font-size: 30px;
-    line-height: 44px;
+    padding-top: 72px;
   }
   .status-bar__delimiter {
     width: 150px;
