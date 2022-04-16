@@ -1,18 +1,23 @@
 .order-card {
   border: none;
   min-height: 215px;
-  background-color: $f1-gray;
-  border-radius: 8px;
+  background-color: white;
+  border-radius: none;
   overflow: hidden;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   column-gap: 40px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 0px 4px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.16);
 
   &__image {
     width: 185px;
     height: 215px;
     object-fit: cover;
+  }
+
+  &__sticker {
+    display: none;
   }
 
   &__description {
@@ -27,7 +32,12 @@
     justify-content: space-between;
   }
 
+  &__text-block {
+    display: none;
+  }
+
   &__cls-btn {
+    display: none;
     width: 24px;
     height: 24px;
     background-image: url(../../../vendor/images/cls-btn.svg);
@@ -78,7 +88,6 @@
   }
 
   &__values-column {
-
     &_prices {
       display: none;
     }
@@ -86,7 +95,7 @@
     &_sums {
       display: flex;
     }
-    
+
     flex-direction: column;
     justify-content: center;
   }
@@ -117,6 +126,22 @@
 
 @media screen and (min-width: $desktop-breakpoint) {
   .order-card {
+    background-color: $f1-gray;
+    border-radius: 8px;
+    box-shadow: none;
+
+    &__sticker {
+      display: block;
+    }
+
+    &__cls-btn {
+      display: block;
+    }
+
+    &__text-block {
+      display: block;
+    }
+
     &__panel {
       font-size: 18px;
       line-height: 24px;
