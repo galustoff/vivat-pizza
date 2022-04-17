@@ -311,6 +311,7 @@
   background-image: url(../../../vendor/images/cls-btn.svg);
   background-size: contain;
   cursor: pointer;
+  z-index: 1;
 }
 .order-card__cls-btn_hiding {
   display: none;
