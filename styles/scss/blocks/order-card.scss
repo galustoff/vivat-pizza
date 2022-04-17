@@ -1,7 +1,7 @@
 .order-card {
   border: none;
   height: 60px;
-  background-color: rgb(20, 201, 207);
+  background-color: white;
   border-radius: unset;
   overflow: hidden;
   display: flex;
@@ -33,11 +33,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  }
-
-  &__title {
-    display: flex;
-    justify-content: space-between;
   }
 
   &__heading {

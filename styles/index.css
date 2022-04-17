@@ -262,7 +262,7 @@
 .order-card {
   border: none;
   height: 60px;
-  background-color: #14c9cf;
+  background-color: white;
   border-radius: unset;
   overflow: hidden;
   display: flex;
@@ -291,10 +291,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-.order-card__title {
-  display: flex;
-  justify-content: space-between;
 }
 .order-card__heading {
   margin: 0;
