@@ -320,7 +320,7 @@
 .order-card__panel {
   width: 140px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   font-weight: 700;
   font-size: 12px;
   line-height: 16px;
@@ -362,7 +362,7 @@
   display: none;
 }
 .order-card__values-column_sums {
-  display: flex;
+  display: none;
 }
 .order-card__value {
   text-align: left;
@@ -384,6 +384,14 @@
   outline: none;
 }
 
+@media screen and (min-width: 310px) {
+  .order-card__panel {
+    justify-content: space-between;
+  }
+  .order-card__values-column_sums {
+    display: flex;
+  }
+}
 @media screen and (min-width: 992px) {
   .order-card {
     height: auto;

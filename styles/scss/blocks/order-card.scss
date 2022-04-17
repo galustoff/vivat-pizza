@@ -66,7 +66,7 @@
   &__panel {
     width: 140px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
@@ -111,7 +111,7 @@
     }
 
     &_sums {
-      display: flex;
+      display: none;
     }
 
     flex-direction: column;
@@ -139,6 +139,20 @@
     color: $gray-text;
     font-weight: 500;
     outline: none;
+  }
+}
+
+@media screen and (min-width: 310px) {
+  .order-card {
+    &__panel {
+      justify-content: space-between;
+    }
+
+    &__values-column {
+      &_sums {
+        display: flex;
+      }
+    }
   }
 }
 
