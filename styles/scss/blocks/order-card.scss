@@ -118,7 +118,7 @@
   }
 
   &__value {
-    text-align: right;
+    text-align: left;
   }
 
   &__value_old {
@@ -200,6 +200,10 @@
       line-height: 24px;
     }
 
+    &__value {
+      text-align: right;
+    }
+    
     &__buttons {
       font-size: 18px;
     }
