@@ -64,8 +64,9 @@
   }
 
   &__panel {
+    width: 140px;
     display: flex;
-    column-gap: 16px;
+    justify-content: space-between;
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
@@ -192,6 +193,7 @@
     }
 
     &__panel {
+      width: unset;
       align-self: flex-end;
       margin: 24px 0 5px;
       display: flex;
@@ -203,7 +205,7 @@
     &__value {
       text-align: right;
     }
-    
+
     &__buttons {
       font-size: 18px;
     }
