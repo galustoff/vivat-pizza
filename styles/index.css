@@ -392,6 +392,14 @@
     display: flex;
   }
 }
+@media screen and (min-width: 440px) {
+  .order-card__panel {
+    width: 200px;
+  }
+  .order-card__values-column_prices {
+    display: flex;
+  }
+}
 @media screen and (min-width: 992px) {
   .order-card {
     height: auto;

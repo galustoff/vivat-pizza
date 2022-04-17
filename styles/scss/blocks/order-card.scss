@@ -156,6 +156,20 @@
   }
 }
 
+@media screen and (min-width: 440px) {
+  .order-card {
+    &__panel {
+      width: 200px;
+    }
+
+    &__values-column {
+      &_prices {
+        display: flex;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: $desktop-breakpoint) {
   .order-card {
     height: auto;
