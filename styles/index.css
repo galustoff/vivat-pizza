@@ -513,7 +513,7 @@
 .promo__paragraph {
   margin-top: 13px;
 }
-.promo__form {
+.promo__input-block {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
