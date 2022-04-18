@@ -192,7 +192,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "basket promo" "gifts promo";
+    grid-template-areas: "basket promo" "gifts promo" "recomendations recomendations";
     gap: 40px;
   }
 }
@@ -599,6 +599,7 @@
 
 @media screen and (min-width: 992px) {
   .recomendations {
+    grid-area: recomendations;
     display: block;
     margin-top: 64px;
   }

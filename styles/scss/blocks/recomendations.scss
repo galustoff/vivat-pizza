@@ -4,6 +4,7 @@
 
 @media screen and (min-width: $desktop-breakpoint) {
   .recomendations {
+    grid-area: recomendations;
     display: block;
     margin-top: 64px;
   
