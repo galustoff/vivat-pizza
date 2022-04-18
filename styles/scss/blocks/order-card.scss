@@ -241,6 +241,10 @@
     &__btn {
       width: 40px;
       height: 48px;
+
+      &:active {
+        transform: scale(0.97, 0.97);
+      }
     }
 
     &__values-column {

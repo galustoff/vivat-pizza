@@ -485,6 +485,9 @@
     width: 40px;
     height: 48px;
   }
+  .order-card__btn:active {
+    transform: scale(0.97, 0.97);
+  }
   .order-card__values-column_prices {
     display: flex;
   }
