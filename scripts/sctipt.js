@@ -1,5 +1,5 @@
 const dde = document.documentElement;
-const promoNextBtn = document.querySelector(".promo__next-btn");
+const promoNextBtn = document.querySelector(".promo__submit-btn");
 const orderForm = document.forms.order;
 
 controlPromoBtnText();

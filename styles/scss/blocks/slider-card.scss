@@ -37,6 +37,10 @@
     border-radius: 32px;
     color: white;
     background-color: $braun;
+
+    &:active {
+      filter: none;
+    }
   }
 
   &__btn_from {    
