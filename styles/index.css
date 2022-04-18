@@ -364,6 +364,9 @@
   width: 26px;
   height: 32px;
 }
+.order-card__btn:active {
+  transform: scale(0.95, 0.95);
+}
 .order-card__btn_minus {
   border-right: none;
   border-left: 2px solid #cc693e;
