@@ -193,7 +193,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "basket promo" "gifts promo" "recomendations recomendations";
+    grid-template-areas: "basket promo" "gifts promo" "recomendations recomendations" "total total";
     gap: 40px;
   }
 }
@@ -618,7 +618,7 @@
 }
 .slider {
   margin: 0;
-  padding: 0 0 50px;
+  padding: 0 0 60px;
   list-style: none;
   display: flex;
   column-gap: 16px;
@@ -672,21 +672,27 @@
 
 @media screen and (min-width: 992px) {
   .total {
-    margin: -50px 0 70px;
-    padding-top: 25px;
+    grid-area: total;
+    margin: -60px -120px 70px;
+    padding-top: 10px;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    row-gap: 32px;
+    row-gap: 24px;
   }
   .total__hr {
-    width: 100%;
+    width: calc(100% - 240px);
+    align-self: center;
     height: 2px !important;
     color: #b3b3b3;
     opacity: 1;
   }
+  .total__text {
+    margin-right: 120px;
+  }
   .total__next-btn {
+    margin-right: 120px;
     padding: 20px 138px;
   }
 }
