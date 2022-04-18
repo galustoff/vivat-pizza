@@ -943,6 +943,7 @@
   width: 30px;
   height: 24px;
   background-repeat: no-repeat;
+  flex-shrink: 0;
 }
 .ingredient__icon_add {
   background-image: url(../../../vendor/images/add.svg);
@@ -953,8 +954,10 @@
 .ingredient__description {
   margin: 0;
   padding: 0;
+  flex-shrink: 1;
 }
 .ingredient__image {
+  margin: 0 5px;
   width: 30px;
   height: 30px;
 }
@@ -964,6 +967,17 @@
   width: 126px;
   justify-content: space-between;
   align-items: center;
+  flex-grow: 1;
+}
+.ingredient__left-column {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  white-space: nowrap;
+  flex-grow: 1;
+}
+.ingredient__sum {
+  white-space: nowrap;
 }
 
 /*# sourceMappingURL=index.css.map */
