@@ -7,17 +7,17 @@
 
 @font-face {
   font-family: "Roboto-Slab";
-  src: url(../../vendor/fonts/RobotoSlab-Regular.woff2) format("woff2"), url(../../vendor/fonts/RobotoSlab-Regular.woff) format("woff"), url(../../vendor/fonts/RobotoSlab-Regular.ttf) format("truetype");
+  src: url(../vendor/fonts/RobotoSlab-Regular.woff2) format("woff2"), url(../vendor/fonts/RobotoSlab-Regular.woff) format("woff"), url(../vendor/fonts/RobotoSlab-Regular.ttf) format("truetype");
   font-weight: 400;
 }
 @font-face {
   font-family: "Roboto-Slab";
-  src: url(../../vendor/fonts/RobotoSlab-Medium.woff2) format("woff2"), url(../../vendor/fonts/RobotoSlab-Medium.woff) format("woff"), url(../../vendor/fonts/RobotoSlab-Medium.ttf) format("truetype");
+  src: url(../vendor/fonts/RobotoSlab-Medium.woff2) format("woff2"), url(../vendor/fonts/RobotoSlab-Medium.woff) format("woff"), url(../vendor/fonts/RobotoSlab-Medium.ttf) format("truetype");
   font-weight: 500;
 }
 @font-face {
   font-family: "Roboto-Slab";
-  src: url(../../vendor/fonts/RobotoSlab-Bold.woff2) format("woff2"), url(../../vendor/fonts/RobotoSlab-Bold.woff) format("woff"), url(../../vendor/fonts/RobotoSlab-Bold.ttf) format("truetype");
+  src: url(../vendor/fonts/RobotoSlab-Bold.woff2) format("woff2"), url(../vendor/fonts/RobotoSlab-Bold.woff) format("woff"), url(../vendor/fonts/RobotoSlab-Bold.ttf) format("truetype");
   font-weight: 700;
 }
 .page {
