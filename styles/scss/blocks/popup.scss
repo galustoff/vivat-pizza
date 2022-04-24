@@ -57,6 +57,7 @@
       text-align: center;
       flex-grow: 1;
       color: $dark-text;
+      cursor: pointer;
 
       &_active {
         background-color: #fff;
